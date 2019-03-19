@@ -42,6 +42,12 @@ module.exports = (env, argv) => {
         }
       ]
     },
+    stats: {
+      maxModules: Infinity,
+      exclude: undefined,
+      excludeModules: undefined,
+      optimizationBailout: true
+    },
     optimization: {
       minimize: (devMode ? undefined : true)
     },
